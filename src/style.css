@@ -1,0 +1,687 @@
+/* Main container */
+.home-container {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; Ensures proper wrapping on small screens */
+  /* padding: 80px 20px; */
+  width: 100%;
+  /* max-width: 1200px; */
+  padding-top: 180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Left section */
+.left-grid {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 60px;
+  color: #191A15;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.heading span {
+  display: block; /* Ensures line breaks */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Show only 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 5.5rem; /* Adjust based on line height */
+}
+
+.vector-line {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.get-started-button {
+  display: inline-block;
+  background-color: #134FEF;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Right section */
+.right-grid {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.home-image {
+  max-width: 100%;
+
+  height: auto;
+}
+.mob-heading{
+  display: none;
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .mob-heading{
+    display: none;
+  }
+  .home-container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+  padding: 80px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px 0 0 0;
+  overflow: hidden;
+  }
+
+  .left-grid {
+    flex: 1;
+  max-width: 60%;
+  text-align: left;
+  padding: 20px;
+  margin-top: 50px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .vector-line {
+    width: 200px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .get-started-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .right-grid {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+}
+/* Responsive Design */
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .mob-heading{
+    display: none;
+  }
+  .home-container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+  padding: 80px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px 0 0 0;
+  overflow: hidden;
+  }
+
+  .left-grid {
+    flex: 1;
+  max-width: 60%;
+  text-align: left;
+  padding: 20px;
+  margin-top: 50px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .vector-line {
+    width: 200px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .get-started-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .right-grid {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+}
+/* For screens between 480px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .heading {
+    display: none;
+  }
+  .home-container {
+    padding-top: 160px;
+  }
+  .mob-heading {
+    display: block;
+    font-size: 56px;
+    text-align: center !important;
+    width: 100%;
+  }
+  #mob-heading {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.3em;
+  }
+  .vector-line {
+    width: 275px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  #description {
+    text-align: start;
+    justify-content: center;
+    justify-items: baseline;
+  }
+  #health_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #whyChoose {
+    font-size: 24px !important;
+  }
+  #desc {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .get-started-button {
+    max-width: 180px;
+  }
+  .getButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .right-grid {
+    order: -1;
+  }
+  .left-grid {
+    order: 2;
+  }
+  .getBtn {
+    margin-top: 90px;
+  }
+  #credit-btn {
+    padding: "6px 25px";
+  }
+  #start_btn {
+    margin-left: 4px;
+  }
+  #personalised_heading {
+    font-size: 24px !important;
+  }
+  #ask_section {
+    font-size: 24px !important;
+    margin-bottom: 12px;
+    margin-top: 35px;
+  }
+  #credit_header {
+    font-size: 16px !important;
+  }
+  .css-10e71p2-MuiTypography-root {
+    font-size: 16px !important;
+    display: flex;
+    text-align: center;
+  }
+  #card-des {
+    display: flex;
+    margin-left: 45px;
+  }
+  #credit-btn {
+    display: none !important;
+  }
+  #trust_section {
+    font-size: 24px !important;
+  }
+  #footer-heading {
+    font-size: 24px;
+    width: 100% !important;
+    white-space: inherit !important;
+  }
+  #footer-desc {
+    white-space: inherit !important;
+  }
+  #footer-desc-two {
+    white-space: inherit !important;
+    font-size: 16px !important;
+  }
+  #footer-img {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #footer-form {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 12px !important;
+  }
+  #contect-footer {
+    margin-left: 35px !important;
+  }
+  #info-footer {
+    margin-left: 4px !important;
+  }
+  #footer-menu {
+    margin-left: 55px !important;
+  }
+  #footer-address {
+    font-size: 20px !important;
+  }
+  #text-footer {
+    font-size: 18px !important;
+  }
+  #why-us {
+    font-size: 30px !important;
+    text-align: center !important;
+    line-height: 1.3em !important;
+  }
+  #whyus-desc {
+    font-size: 18px !important;
+    margin-top: 25px !important;
+    text-align: center !important;
+  }
+  #whyus-main {
+    text-align: center !important;
+  }
+  #why-difference {
+    font-size: 24px !important;
+  }
+  #why-difference-desc {
+    font-size: 18px !important;
+  }
+  #about-desc {
+    font-size: 18px !important;
+    margin-top: 25px !important;
+    text-align: center !important;
+  }
+  #contact-get-start {
+    font-size: 12px !important;
+  }
+  #contact-title {
+    font-size: 24px !important;
+  }
+  #contact-happy {
+    font-size: 24px !important;
+  }
+  #contact-subtitle {
+    font-size: 18px !important;
+  }
+  #home-img-sec {
+    padding: 25px !important;
+  }
+  #main-content {
+    justify-content: center !important;
+  }
+  #income-tax {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-right: 25% !important;
+  }
+}
+
+/* For screens between 768px and 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  .heading {
+    display: block;
+  }
+  .home-container {
+    padding-top: 180px;
+  }
+  .mob-heading {
+    font-size: 60px;
+    text-align: center !important;
+  }
+  #mob-heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3em;
+  }
+  .vector-line {
+    width: 300px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  #description {
+    text-align: start;
+  }
+  #health_cards {
+    justify-content: center;
+  }
+  #whyChoose {
+    font-size: 26px !important;
+  }
+  .get-started-button {
+    max-width: 200px;
+  }
+  #footer-desc-two {
+    white-space: inherit !important;
+    font-size: 20px !important;
+  }
+  .getBtn {
+    margin-top: 100px;
+  }
+  #ask_section {
+    font-size: 26px !important;
+  }
+  #credit_header {
+    font-size: 18px !important;
+  }
+  .css-10e71p2-MuiTypography-root {
+    font-size: 18px !important;
+  }
+  #trust_section {
+    font-size: 26px !important;
+  }
+  #footer-heading {
+    font-size: 24px;
+  }
+  #footer-address {
+    font-size: 16px !important;
+  }
+  #footer-phn{
+    font-size: 16px !important;
+  }
+  #footer-email{
+    font-size: 16px !important;
+  }
+  #footer-enq{
+    max-width: 90% !important;
+  }
+  #text-footer {
+    font-size: 16px !important;
+  }
+  #term-cond{
+    font-size: 16px !important;
+  }
+  #copyright{
+    font-size: 16px !important;
+  }
+  #why-us {
+    font-size: 32px !important;
+  }
+  #whyus-desc {
+    font-size: 20px !important;
+  }
+  #about-desc {
+    font-size: 20px !important;
+  }
+  #contact-title {
+    font-size: 26px !important;
+  }
+  #contact-happy {
+    font-size: 26px !important;
+  }
+  #home-img-sec {
+    padding: 30px !important;
+  }
+  #income-tax {
+    margin-right: 20% !important;
+  }
+  #grid-item-custom {
+    flex-basis: calc(100% / 3) !important; /* Ensures 3 per row */
+    max-width: calc(100% / 3) !important; /* Prevents full width */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .heading {
+    display: none;
+   }
+ .home-container{
+  padding-top: 140px;
+ }
+   .mob-heading{
+     display: block;
+   font-size: 52px;
+   text-align: center !important;
+     width: 100%;
+   }
+#mob-heading{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+  .vector-line {
+    width: 245px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+#description{
+  text-align: start;
+  justify-content: center;
+  justify-items: baseline;
+}
+#health_cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#whyChoose{
+  font-size: 22px !important;
+}
+#desc{
+  justify-content: center !important;
+  text-align: center !important;
+  justify-content: center !important;
+  /* font-size: 18px !important; */
+}
+  .get-started-button {
+    max-width: 160px;
+  }
+  .getButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content; 
+  }
+ .hero-container {
+    display: flex;
+    flex-direction: column-reverse; /* Image first, then text */
+  }
+
+  .right-grid {
+    order: -1; /* Moves the image section to the top */
+  }
+
+  .left-grid {
+    order: 2; /* Moves the text section below */
+  }
+  .getBtn{
+    margin-top: 80px;
+  }
+  #whyChoose{
+    line-height: 1.2em;
+  }
+  #credit-btn{
+    padding: "5px 23px",
+  }
+  #start_btn{
+    margin-left: 2px;
+  }
+#personalised_heading{
+  font-size: 22px !important;
+}
+#ask_section{
+  font-size: 22px !important;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+#credit_header{
+  font-size: 15px !important;
+}
+.css-10e71p2-MuiTypography-root {
+  font-size: 15px !important;
+  display: flex;
+  text-align: center;
+}
+#card-des {
+  display: flex;
+  justify-content: start; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Centers text inside elements */
+  margin-left: 40px;
+}
+#credit-btn{
+  display: none !important;
+}
+#trust_section{
+  font-size: 22px !important;
+}
+#footer-heading{
+  font-size: 22px;
+  width: 100% !important;
+  white-space:inherit !important;
+}
+#footer-desc{
+  white-space:inherit !important;
+}
+#footer-desc-two{
+  white-space:inherit !important;
+  font-size: 18px !important;
+}
+#footer-img{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  
+}
+#footer-form{
+ display: flex !important;
+ justify-content: center !important;
+ align-items: center !important;
+ margin-left: 10px !important;
+}
+#contect-footer{
+  margin-left: 30px !important;
+}
+#info-footer{
+  margin-left: 2px !important;
+}
+#footer-menu{
+  margin-left: 50px !important;
+}
+#footer-address{
+  font-size: 18px !important;
+}
+#text-footer{
+  font-size: 16px !important;
+}
+#why-us{
+  font-size:28px !important;
+  text-align: center !important;
+  line-height: 1.2em !important;
+}
+#whyus-desc{
+  /* display: flex !important; */
+  font-size: 16px !important;
+  margin-top: 20px !important;
+  text-align: center !important;
+}
+#whyus-main{
+  text-align: center !important;
+}
+#why-difference{
+  font-size: 22px !important;
+}
+#why-difference-desc{
+  font-size: 16px !important;
+}
+#about-desc{
+  /* display: flex !important; */
+  font-size: 16px !important;
+  margin-top: 20px !important;
+  text-align: center !important;
+}
+#contact-get-start{
+  font-size: 10px !important;
+}
+#contact-title{
+  font-size: 22px !important;
+}
+#contact-happy{
+  font-size: 22px !important;
+}
+#contact-subtitle{
+  font-size: 17px !important;
+}
+#home-img-sec{
+  padding: 20px !important;
+}
+#main-content{
+  justify-content: center !important;
+}
+#income-tax{
+  display: flex !important;
+  justify-content: space-between !important;
+  /* justify-content: start !important; */
+  align-items: center !important;
+  width: 100% !important;
+  margin-right: 30% !important;
+}
+
+}
